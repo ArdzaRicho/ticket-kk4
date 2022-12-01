@@ -1,0 +1,487 @@
+{
+	"info": {
+		"_postman_id": "6e72100f-a69d-433f-a834-4adcb40af87b",
+		"name": "UASBK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23730279"
+	},
+	"item": [
+		{
+			"name": "New Folder",
+			"item": [
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "Konser",
+							"item": [
+								{
+									"name": "Create Ticket",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "1|bvn9GB5mZjj1r3CqTP5Z48j9Tzrr5GKS6N1wRaNN",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "nama",
+													"value": "hivi",
+													"type": "text"
+												},
+												{
+													"key": "tanggal",
+													"value": "gtw",
+													"type": "text"
+												},
+												{
+													"key": "tempat",
+													"value": "tegal",
+													"type": "text"
+												},
+												{
+													"key": "harga",
+													"value": "100000",
+													"type": "text"
+												},
+												{
+													"key": "deskripsi",
+													"value": "y",
+													"type": "text"
+												},
+												{
+													"key": "poster",
+													"type": "file",
+													"src": "/Users/macbook/Downloads/1761240253.jpg"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/admin/konser",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"admin",
+												"konser"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Ticket",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "1|bvn9GB5mZjj1r3CqTP5Z48j9Tzrr5GKS6N1wRaNN",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "nama",
+													"value": "cas",
+													"type": "text"
+												},
+												{
+													"key": "tanggal",
+													"value": "21 12 22",
+													"type": "text"
+												},
+												{
+													"key": "tempat",
+													"value": "brebes",
+													"type": "text"
+												},
+												{
+													"key": "harga",
+													"value": "20000",
+													"type": "text"
+												},
+												{
+													"key": "deskripsi",
+													"value": "yyyy",
+													"type": "text"
+												},
+												{
+													"key": "poster",
+													"value": "",
+													"type": "text",
+													"disabled": true
+												}
+											]
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/admin/konser/2",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"admin",
+												"konser",
+												"2"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Read Ticket",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "1|kazdJbWTOglUbJVwSotVPG5V1LPe8A35UfYheZfP",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/admin/konser",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"admin",
+												"konser"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete Ticket",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "1|kazdJbWTOglUbJVwSotVPG5V1LPe8A35UfYheZfP",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/admin/konser/1",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"admin",
+												"konser",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Read Ticket by : id",
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Read Ticket",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/konser",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"konser"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Show Ticket",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "4|nxpZSbAAskY839MDpZsCJlXBUTRMe5iWZiAto4wN",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "konser_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "nama",
+											"value": "abid alauddin",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "abidalauddin@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "no_hp",
+											"value": "091282192",
+											"type": "text"
+										},
+										{
+											"key": "jumlah_tiket",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/beli-tiket",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"beli-tiket"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "nayla",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "nayla12@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "nayla1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|bvn9GB5mZjj1r3CqTP5Z48j9Tzrr5GKS6N1wRaNN",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
